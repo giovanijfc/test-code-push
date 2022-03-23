@@ -1,0 +1,68 @@
+{
+  "name": "testcodepush",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "android:release": "react-native run-android --variant=release",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "release:android:cp": "appcenter codepush release-react -a giovani.chiodi-queimadiaria.com.br/TestCodePush -d Production",
+    "cp:list:keys": "appcenter codepush deployment list -a giovani.chiodi-queimadiaria.com.br/TestCodePush -k"
+  },
+  "dependencies": {
+    "@react-native-community/cli": "^6.2.0",
+    "appcenter": "^4.4.3",
+    "appcenter-analytics": "^4.4.3",
+    "appcenter-crashes": "^4.4.3",
+    "react": "17.0.2",
+    "react-native": "0.66.3",
+    "react-native-code-push": "^7.0.4",
+    "react-native-eject": "^0.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/react-native": "^0.66.4",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2",
+    "typescript": "^4.4.4"
+  },
+  "resolutions": {
+    "@types/react": "^17"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "bracketSpacing": true,
+    "trailingComma": "none",
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "jsxSingleQuote": true
+  }
+}
